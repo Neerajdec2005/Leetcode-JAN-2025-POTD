@@ -8,7 +8,7 @@ public:
         }
         int h=0;
         for(auto x:m){
-            if(x.second%2!=0) h++;
+            if(x.second&1==1) h++;
         }
         if(h>k) return false;
         else return true;
